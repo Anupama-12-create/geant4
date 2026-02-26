@@ -1,0 +1,20 @@
+:rotm r000 0 0 0
+
+:solid hall BOX 200 200 200
+:volu  hall hall G4_AIR
+:vis   hall OFF
+
+:solid Envelope BOX 100 100 100
+:volu  Envelope Envelope G4_AIR
+:vis   Envelope OFF
+:place Envelope 1 hall r000 0 0 0
+
+:solid box BOX 5 10 20
+:volu  box box G4_WATER
+:color box 0.4 0.3 0.8
+:place box 1 Envelope r000 0 0 0
+
+:solid Shape3 TUBE 0 20 40 0 360
+:volu  Shape3Vol Shape3 G4_Al
+:color Shape3Vol 1 0 0
+:place Shape3Vol 2 Envelope r000 30 0 0
