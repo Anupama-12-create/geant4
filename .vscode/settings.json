@@ -3,5 +3,8 @@
   "files.associations": {
     "*.tg": "geant4-tg",
     "*.mac": "g4macro"
-  }
+  },
+  "geant4-macro-extension.additionalCommands": [
+    "/analysis/setOutputFile"
+  ]
 }

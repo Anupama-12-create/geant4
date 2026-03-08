@@ -1,0 +1,20 @@
+:rotm r000 0 0 0
+
+:solid hall BOX 200 200 200
+:volu  hall hall G4_AIR
+:vis   hall OFF
+
+:solid AirBox BOX 20 20 20
+:volu  AirVol AirBox G4_AIR
+:color AirVol 0.8 0.8 0.8
+:place AirVol 1 hall r000 -40 0 0
+
+:solid WaterBox BOX 20 20 20
+:volu  WaterVol WaterBox G4_WATER
+:color WaterVol 0.4 0.6 1.0
+:place WaterVol 1 hall r000 0 0 0
+
+:solid LeadBox BOX 20 20 20
+:volu  LeadVol LeadBox G4_Pb
+:color LeadVol 0.6 0.6 0.6
+:place LeadVol 1 hall r000 40 0 0
